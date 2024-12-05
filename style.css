@@ -13,7 +13,6 @@ header {
   padding: 0.5em 0;
   text-align: center;
   position: relative;
-
 }
 
 nav {
@@ -28,13 +27,12 @@ nav a {
   padding: 0.5em 1em;
   text-decoration: none;
   font-weight: 600;
-  transition: text-decoration 0.3s ease; /* Añade una transición suave */
+  transition: text-decoration 0.3s ease;
 }
 
 nav a:hover {
-  text-decoration: underline; /* Subrayado al pasar el mouse */
+  text-decoration: underline;
 }
-
 
 /* Estilos del menú desplegable */
 .dropdown {
@@ -73,7 +71,6 @@ nav a:hover {
   position: relative;
   width: 100%;
   z-index: 999;
-  
 }
 
 .logo-container {
@@ -85,8 +82,8 @@ nav a:hover {
 }
 
 .header-logo {
-  height: 150;
-  width: 183px; /* Ajusta el tamaño del logo */
+  height: 80px;
+  width: 283px; /* Ajusta el tamaño del logo */
   max-width: 100%;
 }
 
@@ -102,7 +99,7 @@ footer {
 #hero-banner {
   width: 100%;
   overflow: hidden;
-  margin-top: 30px; /* Espacio en blanco antes del banner */
+  margin-top: 30px;
 }
 
 .hero-image-container {
@@ -136,6 +133,63 @@ footer {
   margin: 0;
   padding: 0;
 }
+
+/* Media Queries para optimizar en pantallas pequeñas */
+@media (max-width: 768px) {
+  /* Ajustes en el tamaño del texto */
+  body {
+    font-size: 14px;
+  }
+
+  /* Ajustes para el menú de navegación */
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    padding: 0.5em;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  /* Ajustes para el banner promocional */
+  .promo-banner {
+    font-size: 0.75em;
+  }
+
+  .header-logo {
+    width: 200px; /* Ajusta el tamaño del logo en pantallas pequeñas */
+  }
+
+  /* Ajustes para la imagen del banner grande */
+  .hero-text h1 {
+    font-size: 1.5em; /* Reduce el tamaño del texto */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajustes en el tamaño del texto */
+  body {
+    font-size: 12px;
+  }
+
+  /* Ajustes para el menú de navegación */
+  nav a {
+    padding: 0.5em;
+    font-size: 0.9rem;
+  }
+
+  /* Ajustes para el banner promocional */
+  .promo-banner {
+    font-size: 0.7em;
+  }
+
+  /* Ajustes para la imagen del banner grande */
+  .hero-text h1 {
+    font-size: 1.2em; /* Reduce aún más el tamaño del texto */
+  }
+}
+
 
 /* Estilos para el botón de WhatsApp flotante */
 .whatsapp-button {
