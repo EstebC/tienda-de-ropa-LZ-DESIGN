@@ -1,4 +1,4 @@
-/* Estilos base */
+* Estilos base */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -13,6 +13,7 @@ header {
   padding: 0.5em 0;
   text-align: center;
   position: relative;
+
 }
 
 nav {
@@ -27,12 +28,13 @@ nav a {
   padding: 0.5em 1em;
   text-decoration: none;
   font-weight: 600;
-  transition: text-decoration 0.3s ease;
+  transition: text-decoration 0.3s ease; /* Añade una transición suave */
 }
 
 nav a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Subrayado al pasar el mouse */
 }
+
 
 /* Estilos del menú desplegable */
 .dropdown {
@@ -71,6 +73,7 @@ nav a:hover {
   position: relative;
   width: 100%;
   z-index: 999;
+  
 }
 
 .logo-container {
@@ -82,7 +85,7 @@ nav a:hover {
 }
 
 .header-logo {
-  height: 80px;
+  height: 80;
   width: 283px; /* Ajusta el tamaño del logo */
   max-width: 100%;
 }
@@ -99,7 +102,7 @@ footer {
 #hero-banner {
   width: 100%;
   overflow: hidden;
-  margin-top: 30px;
+  margin-top: 30px; /* Espacio en blanco antes del banner */
 }
 
 .hero-image-container {
@@ -134,61 +137,6 @@ footer {
   padding: 0;
 }
 
-/* Media Queries para optimizar en pantallas pequeñas */
-@media (max-width: 768px) {
-  /* Ajustes en el tamaño del texto */
-  body {
-    font-size: 14px;
-  }
-
-  /* Ajustes para el menú de navegación */
-  nav {
-    flex-direction: column;
-  }
-
-  nav a {
-    padding: 0.5em;
-    text-align: center;
-    font-size: 1rem;
-  }
-
-  /* Ajustes para el banner promocional */
-  .promo-banner {
-    font-size: 0.75em;
-  }
-
-  .header-logo {
-    width: 200px; /* Ajusta el tamaño del logo en pantallas pequeñas */
-  }
-
-  /* Ajustes para la imagen del banner grande */
-  .hero-text h1 {
-    font-size: 1.5em; /* Reduce el tamaño del texto */
-  }
-}
-
-@media (max-width: 480px) {
-  /* Ajustes en el tamaño del texto */
-  body {
-    font-size: 12px;
-  }
-
-  /* Ajustes para el menú de navegación */
-  nav a {
-    padding: 0.5em;
-    font-size: 0.9rem;
-  }
-
-  /* Ajustes para el banner promocional */
-  .promo-banner {
-    font-size: 0.7em;
-  }
-
-  /* Ajustes para la imagen del banner grande */
-  .hero-text h1 {
-    font-size: 1.2em; /* Reduce aún más el tamaño del texto */
-  }
-}
 
 
 /* Estilos para el botón de WhatsApp flotante */
