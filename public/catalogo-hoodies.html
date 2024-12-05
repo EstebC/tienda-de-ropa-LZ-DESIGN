@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LZ DESIGN Catalogo </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="imagenes/logitobw.png">
+</head>
+<body>
+  <!-- Sección para el mensaje de promoción -->
+  <div class="promo-banner">
+    <div class="promo-message">🚚🔥 Envío gratis con pago contraentrega en Bogotá 🚚🔥</div>
+    <div class="promo-message">💥 🏷️ Disfruta de nuestras promos de inauguración 💥 🏷️</div>
+  </div>
+
+  <!-- Sección para carrito, ayuda, seguimiento de pedido -->
+  <div class="promo-banner-fondo-blanco"></div>
+  
+  <header>
+    <div class="header-content">
+      <h1>CONOCE NUESTRA TIENDA VIRTUAL</h1>
+      <h1>LUCE A TU ESTILO CON LOS MEJORES DISEÑOS</h1>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <div class="dropdown">
+          <a href="#">Catálogo</a>
+          <div class="dropdown-content">
+            <a href="catalogo-hoodies.html" id="hoodies-link">Hoodies</a>
+            <a href="#">Sudaderas</a>
+            <a href="#">Jeans</a>
+            <a href="#">Joggers</a>
+            <a href="#">Chaquetas</a>
+          </div>
+        </div>
+        <a href="carrito.html">Carrito</a>
+        <a href="#">Perfil</a>
+      </nav>
+      <div class="logo-container">
+        <img src="imagenes/logitobw.png" alt="Logo de LUZETE" class="header-logo">
+      </div>
+    </div>
+  </header>
+
+  <!-- Sección de productos -->
+  <section id="content">
+    <main class="catalog-container">
+      <!-- Columna izquierda -->
+      <aside class="sidebar">
+        <h3>Búsqueda de Productos</h3>
+        <input type="text" id="search-bar" placeholder="Buscar productos...">
+
+        <h3>Categorías</h3>
+        <ul class="product-menu">
+          <li><a href="#">Hoodie 2024</a></li>
+          <li><a href="#">Hoodie Style</a></li>
+          <li><a href="#">Hoodie X100pre</a></li>
+        </ul>
+      </aside>
+  
+      <!-- Sección de productos -->
+      <section id="productos" class="product-section">
+        <h2>Explora nuestra colección de Hoodies</h2>
+        <div class="product-list">
+          <div class="product-item">
+            <img src="imagenes/gorroazultransicion.jpg" alt="Hoodie Clásico capucha azul">
+            <h3>Hoodie Clásico capucha azul</h3>
+            <p>$70.000 COP <span class="carrito-icon" onclick="abrirModal('Hoodie Clásico capucha azul')">🛒</span></p>
+          </div>
+          <div class="product-item">
+            <img src="imagenes/gorromoradotransicion.jpg" alt="Hoodie Clásico capucha morada">
+            <h3>Hoodie Clásico capucha morada</h3>
+            <p>$70.000 COP <span class="carrito-icon" onclick="abrirModal('Hoodie Clásico capucha morada')">🛒</span></p>
+          </div>
+          <div class="product-item">
+            <img src="imagenes/gorroverdetransicion.jpg" alt="Hoodie Clásico capucha verde">
+            <h3>Hoodie Clásico capucha verde</h3>
+            <p>$70.000 COP <span class="carrito-icon" onclick="abrirModal('Hoodie Clásico capucha verde')">🛒</span></p>
+          </div>
+          <div class="product-item">
+            <img src="imagenes/saconegrocapucBEIGE.png" alt="Hoodie Clásico capucha beige">
+            <h3>Hoodie Clásico capucha beige</h3>
+            <p>$70.000 COP <span class="carrito-icon" onclick="abrirModal('Hoodie Clásico capucha beige')">🛒</span></p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </section>
+
+  <!-- Sección de carrito (opcional) -->
+  <section id="carrito">
+    <h1>Tu Carrito</h1>
+    <div class="carrito-productos"></div>
+    <div class="carrito-resumen">
+      <h2>Resumen del Pedido</h2>
+      <p>Total productos: <span id="total-productos">0</span></p>
+      <p>Total: <span id="total-precio">$0</span></p>
+      <button class="comprar">Finalizar Compra 🛒</button>
+    </div>
+  </section>
+
+  <!-- Formulario emergente para agregar productos -->
+  <div id="modal-agregar" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Agregar al Carrito</h2>
+      <form id="form-agregar">
+        <label for="producto">Producto:</label>
+        <input type="text" id="producto" name="producto" readonly>
+        
+        <label for="talla">Talla:</label>
+        <select id="talla" name="talla">
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+        </select>
+        
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" value="1">
+        
+        <button type="button" class="agregar-btn">Agregar al Carrito 🛒</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 LUZETE Tienda de Ropa. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
