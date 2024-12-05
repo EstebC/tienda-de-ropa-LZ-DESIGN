@@ -251,6 +251,7 @@ footer {
 }
 
 
+
 /* Animación personalizada para que cada imagen se quede 3 segundos y luego cambie */
 @keyframes slide {
   0% { transform: translateX(0); }
@@ -262,67 +263,6 @@ footer {
   75% { transform: translateX(-300%); }
   95% { transform: translateX(-300%); }
   100% { transform: translateX(0); }
-}
-
-/* Media Queries para pantallas móviles */
-
-@media screen and (max-width: 1024px) {
-  /* Ajustes para el slider */
-  #slider {
-    height: 250px; /* Reduce la altura para pantallas más pequeñas */
-  }
-
-  .hero-text h1 {
-    font-size: 1.5em; /* Reduce el tamaño de la fuente en pantallas pequeñas */
-  }
-
-  .whatsapp-button img {
-    width: 2.5em; /* Reduce el tamaño del icono */
-    height: 2.5em;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  /* Ajustes para pantallas de tablets y móviles más grandes */
-  .hero-text h1 {
-    font-size: 1.2em; /* Aún más pequeño para pantallas más pequeñas */
-  }
-
-  .whatsapp-button img {
-    width: 2.2em;
-    height: 2.2em;
-  }
-
-  /* Ajustes para el slider de imágenes */
-  .slides {
-    width: 100%; /* Asegura que el slider ocupe el 100% de la pantalla */
-  }
-
-  .slide img {
-    max-width: 90%; /* Ajusta el tamaño de las imágenes */
-    object-fit: contain; /* Asegura que las imágenes no se deformen */
-  }
-}
-
-@media screen and (max-width: 480px) {
-  /* Ajustes para móviles más pequeños */
-  #slider {
-    height: 200px; /* Reduce la altura del slider en móviles */
-  }
-
-  .hero-text h1 {
-    font-size: 1em; /* Reduce aún más el tamaño de la fuente */
-  }
-
-  .whatsapp-button img {
-    width: 2em;
-    height: 2em; /* Reduce aún más el tamaño del botón */
-  }
-
-  .whatsapp-message {
-    font-size: 0.75em; /* Reduce el tamaño del texto del mensaje */
-    right: 2.5em; /* Ajusta la posición para móviles */
-  }
 }
 
 
